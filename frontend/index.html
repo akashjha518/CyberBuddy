@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberBuddy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>CyberBuddy</h1>
+
+            <p>
+                Your simple cybersecurity assistant.
+            </p>
+
+            <p class="subtitle">
+                Understand suspicious messages and URLs before you act.
+            </p>
+        </header>
+
+
+        <section class="analyzer-card">
+
+            <div class="tabs">
+                <button
+                    id="messageTab"
+                    class="tab active"
+                    type="button"
+                >
+                    Message
+                </button>
+
+                <button
+                    id="urlTab"
+                    class="tab"
+                    type="button"
+                >
+                    URL
+                </button>
+            </div>
+
+
+            <div id="messageInputContainer">
+
+                <label for="messageInput">
+                    Suspicious message
+                </label>
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Paste a suspicious email, SMS, or message here..."
+                    maxlength="10000"
+                ></textarea>
+
+            </div>
+
+
+            <div
+                id="urlInputContainer"
+                class="hidden"
+            >
+
+                <label for="urlInput">
+                    Suspicious URL
+                </label>
+
+                <input
+                    id="urlInput"
+                    type="url"
+                    placeholder="https://example.com/login"
+                    maxlength="2048"
+                >
+
+            </div>
+
+
+            <button
+                id="analyzeButton"
+                type="button"
+            >
+                Analyze Message
+            </button>
+
+
+            <p
+                id="status"
+                class="status"
+                aria-live="polite"
+            ></p>
+
+        </section>
+
+
+        <section id="result"></section>
+
+
+        <footer>
+            <p>
+                CyberBuddy identifies security indicators and provides
+                guidance. A risk level is not definitive proof that
+                something is malicious.
+            </p>
+        </footer>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

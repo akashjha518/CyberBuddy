@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 50px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #6b7280;
+}
+
+.analyzer-card,
+.result-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.status {
+    min-height: 20px;
+    color: #6b7280;
+}
+
+.risk-low {
+    font-weight: bold;
+}
+
+.risk-medium {
+    font-weight: bold;
+}
+
+.risk-high {
+    font-weight: bold;
+}
+
+.risk-critical {
+    font-weight: bold;
+}
+
+.disclaimer,
+footer {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    margin-top: 0;
+    background: #e5e7eb;
+}
+
+.tab.active {
+    background: #2563eb;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input[type="url"]:focus,
+textarea:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+.result-card h3 {
+    margin-top: 24px;
+}
+
+.ai-explanation {
+    margin-top: 24px;
+    padding: 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.ai-explanation h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.ai-explanation p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
